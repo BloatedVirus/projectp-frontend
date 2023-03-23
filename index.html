@@ -2,6 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,22 +12,23 @@
 </head>
 
 <body>
+    <nav>
+        <div class="container">
+            <ul class="nav">
+                <li class="nav__item"><a href="#">Project P</a></li>
+                <li class="nav__item"><a href="#"><span class="light">Ons Verhaal</span></a></li>
+                <li class="nav__item"><a href="#"><span class="light">Al Opgehaald</span></a></li>
+                <li class="nav__item"><a href="#"><span class="light">Steun Ons</span></a></li>
+                <li class="nav__item"><a href="#"><span class="light">Onze Acties</span></a></li>
+                <li class="nav__item"><a href="#"><span class="light">De Muur</span></a></li>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <nav>
-            <div class="container">
-                <ul class="nav">
-                    <li class="nav__item"><a href="#">Popov</a></li>
-                    <li class="nav__item"><a href="#">Ons Verhaal</a></li>
-                    <li class="nav__item"><a href="#">Opgehaald</a></li>
-                    <li class="nav__item"><a href="#">Steun Ons</a></li>
-                    <li class="nav__item"><a href="#">Acties</a></li>
-                    <li class="nav__item"><a href="#">De Muur</a></li>
-                </ul>
-            </div>
-        </nav>
+        <h1><span class="light">Chiro Popov Bouwt aan</span><br>nieuwe lokalen</h1>
     </header>
 
-    <section>
+    <section class="fullheight">
         <div class="container">
             <article>
                 <h2>Ons Verhaal!</h2>
@@ -32,16 +36,18 @@
                 <p>Een lokaal bouw je niet in 1, 2, 3. Daar komt heel wat bij kijken. Het team achter het nieuwe lokaal zijn enthousiaste leiders, oud-leiders, ouders, leden van de VZW, … die hun schouders willen zetten onder dit fantastisch project.</p>
                 <p>Onze jeugdbeweging kent de laatste jaren een enorme groei. Een groei die ons lokaal niet langer kan bijhouden. Mankementen en gebreken blijven zich opstapelen, maar vooral de grootte van het gebouw is het grootste struikelblok. Werkgroep Nieuw Lokaal gaat actief in dialoog met de gemeente en levert een valabele inbreng in dit project.</p>
             </article>
+            <article>
+             </article>
         </div>
     </section>
-    <section>
-        <article>
-            <h2>Steun Dit Project!</h2>
-            <h3>Begin met het project te steunen</h3>
-            <p></p>
+
+    <section class="steun halfheight">
+        <article class="container container--steun">
+            
         </article>
     </section>
-    <section>
+
+    <section class="fullheight">
         <h2>Koop een steen!</h2>
         <article>
             <h3>En kom zo op onze muur</h3>
@@ -52,6 +58,7 @@
             <p>Met de huldiging organiseren we een tombola waar je fantastische prijzen kan winnen. Per steen die je koopt komt je naam één keer terecht in de pot. Een onschuldige hand zal dan 5 namen uit de pot nemen. Hoe meer stenen je dus koopt hoe meer kans je maakt op een prijs.</p>
         </article>
     </section>
+
     <section>
         <h2>Ontdek onze acties!</h2>
         <article>
@@ -59,8 +66,37 @@
             <p>Zaterdag 25 maart 2023 is de eerste actie van Project P, de voorstelling van het projcect met receptie.</p>
         </article>
     </section>
-    <footer>
 
+    <footer>
+        <div class="container container--footer">
+            <article>
+                <h2>Project P</h2>
+                <ul>
+                    <li><a href="#">Ons Verhaal</a></li>
+                    <li><a href="#">Al Opgehaald</a></li>
+                    <li><a href="#">Steun Ons</a></li>
+                    <li><a href="#">Onze Acties</a></li>
+                    <li><a href="#">De Muur</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Bosfeesten</h2>
+                <ul>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Chiro Popov</h2>
+                <ul>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.6961217947405!2d4.0570212159136885!3d50.98480725659813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3970a1430fa49%3A0x9737e92cfa0f6b47!2sChiro%20Popov%20vzw!5e0!3m2!1sen!2sbe!4v1679579175416!5m2!1sen!2sbe" width="600" height="450" style="border:0;border-radius: 2vw;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </footer>
 </body>
 

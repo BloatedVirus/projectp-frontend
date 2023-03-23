@@ -1,18 +1,20 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
-const Project =() => {
-    return (
-      <div>
-        <section>
-          <article>
-            <h2>Steun Dit Project!</h2>
-            <h3>Begin met het project te steunen</h3>
-            <p></p>
-          </article>
-        </section>
-      </div>
-    );
-  }
+const Project = () => {
+  return (
+    <section class="steun halfheight">
+      <article class="container container--steun">
+        <h3>Al 0 euro opgehaald van <br/> het ... EUR opgehaald</h3>
+
+        <button> Steun Dit Project</button>
+
+        <div>
+        <p>Deel dit project</p>
+        </div>
+      </article>
+    </section>
+  );
+};
 
 export default Project;
