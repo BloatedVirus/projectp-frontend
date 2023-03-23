@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 import Navigation from './components/Navigation';
 import RootNavigation from './navigation/RootNavigation';
+import reset from './reset.css';
 
 function App() {
   return (
-    <div>
+    <div className={reset}>
       <Navigation></Navigation>
       <RootNavigation></RootNavigation>
     </div>

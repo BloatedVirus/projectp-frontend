@@ -3,26 +3,30 @@ import CustomLink from "./CustomLink";
 
 const Navigation = () => {
   return (
-    <div>
-      <CustomLink to="/popov" class="nav__item">
-        Popov
-      </CustomLink>
-      <CustomLink to="/ons-verhaal" class="nav__item">
-        Ons Verhaal
-      </CustomLink>
-      <CustomLink to="/opgehaald" class="nav__item">
-        Opgehaald
-      </CustomLink>
-      <CustomLink to="/steun-ons" class="nav__item">
-        Steun Ons
-      </CustomLink>
-      <CustomLink to="/acties" class="nav__item">
-        Acties
-      </CustomLink>
-      <CustomLink to="/de-muur" class="nav__item">
-        De Muur
-      </CustomLink>
-    </div>
+    <nav>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="#">Popov</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Ons Verhaal</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Opgehaald</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Steun Ons</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Acties</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">De Muur</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 export default Navigation;
