@@ -1,0 +1,131 @@
+.onecom-webshop-main {
+  color: #363636;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*
+* Font color is applied as for texts and input fields.
+*/
+.onecom-webshop-main input,
+.onecom-webshop-main select,
+.onecom-webshop-main .text-color {
+  color: #363636;
+}
+
+/*
+* Font color is applied for SVG icons also if the svg icons are inside 'Back' button in checkout page.
+*/
+.onecom-webshop-main .text-color svg {
+  fill: #363636;
+}
+
+/*
+* Dropdown menus
+* Background color for the dropdown
+*/
+.onecom-webshop-main .bg-color {
+  background-color: #ffffff !important;
+}
+
+/*
+* Border color for the dropdown.
+*/
+.onecom-webshop-main .border-color {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/*
+* Text color for the dropdown.
+*/
+.onecom-webshop-main .dropdown-text {
+  color: #000000 !important;
+}
+
+/*
+* Color for the dropdown arrow icon
+*/
+.onecom-webshop-main .dropdown-text svg {
+  fill: #000000 !important;
+}
+
+/*
+* Hover color for the dropdown list items.
+*/
+.onecom-webshop-main .bg-light-focus:hover {
+  color: #000000 !important;
+  background-color: rgba(99, 170, 219, 0.5) !important;
+}
+
+/*
+* Borders styles
+* Used as border color in default buttons like 'Back','Return to shop' and also in checkout cart preview
+*/
+.onecom-webshop-main .border-fcolor {
+  border-color: #363636 !important;
+}
+
+/*
+* Used for border of order details
+*/
+.onecom-webshop-main .border-light-font-color {
+  border-color: rgba(54, 54, 54, 0.5) !important;
+}
+
+/*
+* Used headings bottom border Eg: checkout page , cart page.
+*/
+.onecom-webshop-main .border-light-color {
+  border-color: #363636 !important;
+}
+
+/*
+* Focus color
+* Used in cart icon, price text, links, and mobile slider border.
+*/
+.onecom-webshop-main .focus,
+.onecom-webshop-main .mobile-slider a {
+  color: crimson !important;
+}
+.onecom-webshop-main .focus svg {
+  fill: crimson !important;
+}
+
+/*
+* Focus colors on hover
+* Used as cart item hover color.
+*/
+.onecom-webshop-main .bg-extra-light-focus:hover {
+  background-color: rgba(99, 170, 219, 0.1) !important;
+}
+.onecom-webshop-main .bg-extra-light-focus {
+  border-color: rgba(54, 54, 54, 0.2) !important;
+}
+
+/*
+* Image overlay hover color.
+*/
+.onecom-webshop-main .overlay-container:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Hacker */
+
+.ws-header {
+    display: none !important;
+}
+
+.onecom-webshop-main {
+    padding-top: 0 !important;
+}
+
+.product-list-wrapper {
+    padding-top: 0 !important;
+}
+
+.product-label {
+    background-color: crimson !important;
+}
+
+.name {
+    color: crimson !important;
+}

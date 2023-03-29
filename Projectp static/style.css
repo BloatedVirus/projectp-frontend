@@ -1,0 +1,289 @@
+/* GLOBAL */
+
+*{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 4vw;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    
+}
+
+h3 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1vw;
+    line-height: 1.5vw;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.fullheight {
+    height: 100vh;
+}
+
+.halfheight {
+    height: 50vh;
+}
+
+/* NAV */
+
+nav {
+    background-color: black;
+    color: white;
+    z-index: 99;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item a {
+    padding: 2vw 0;
+    display: block;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    background-color: crimson;
+    background-image: url("assets/img/tegan-mierle-fDostElVhN8-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ABOUT */
+
+.verhaal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--verhaal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
+    border-radius: 2vw; 
+    box-shadow: 0vw 0vw 1rem black;
+}
+
+.verhaal--background {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/img/verhaal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 2vw 2vw 0; 
+}
+
+.verhaal--text {
+    padding: 2vw;
+}
+
+/* SUPPORT */
+
+.steun {
+    background-color: crimson;
+    color: white;
+}
+
+.container--steun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/** Social Button CSS **/
+
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: 0.1em 0.6em;
+  outline: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 0.2em;
+}
+
+.share-btn:focus,
+.share-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.share-btn:active {
+  color: #e2e2e2;
+}
+
+.share-btn.twitter     { background: #55acee; }
+.share-btn.google-plus { background: #dd4b39; }
+.share-btn.facebook    { background: #3B5998; }
+.share-btn.stumbleupon { background: #EB4823; }
+.share-btn.reddit      { background: #ff5700; }
+.share-btn.hackernews  { background: #ff6600; }
+.share-btn.linkedin    { background: #4875B4; }
+.share-btn.email       { background: #444444; }
+
+/* SHOP */
+
+.shop {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop--content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 75vh;
+    gap: 2vw;
+}
+
+.shop--products {
+    border-radius: 2vw; 
+    box-shadow: 0vw 0vw 1rem black;
+    padding: 2vw;
+}
+
+/* ACTIONS */
+/* FORM */
+/* FOOTER */
+
+footer {
+    height: 50vh;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center
+}
+.container--footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padding{
+    margin-bottom: 2vw;
+}
+
+
+.sidenav {
+    display: none;
+}
+
+/* MOBILE - 600PX */
+/* Op schermen die 600px of kleiner zijn doe dit: */
+
+@media screen and (max-width: 768px) {
+    p {
+        
+        font-size: 3vw;
+        line-height: 1.6;
+    }
+    .sidenav {
+        display: flex;
+    }
+    .glass{
+        /* animation to glassmorghism */
+        transition: all 0.1s ease-in;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    }
+
+    .horizontal-nav {
+        display: none;
+    }
+    .container--verhaal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        height: 75vh;
+        border-radius: none; 
+        box-shadow: none;
+    }
+
+    .verhaal--background {
+        margin: 0 auto;
+        margin-bottom: 5vh;
+        grid-row-start: 1;
+        border-radius: 0 0vw 0vw 0; 
+    }
+
+    .items {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .shop--content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        height: 75vh;
+        gap: 2vw;
+    }
+
+    /* Footer */
+
+    .d-flex{
+        flex-direction: column;
+    }
+    footer{
+        height: 100vh;
+    }
+    iframe{
+        margin-top: 12.5vh ;
+    }
+
+    /* alle andere classen hier aanpassen*/
+}
