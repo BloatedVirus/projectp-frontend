@@ -15,7 +15,6 @@ const Home = () => {
       <Project />
       <Steen />
       <Acties />
-
       <Footer />
     </div>
   );

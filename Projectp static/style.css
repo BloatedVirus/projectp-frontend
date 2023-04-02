@@ -25,7 +25,7 @@ h3 {
 }
 
 a {
-    color: inherit;
+    color: inherit ;
     text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ p:last-child {
 }
 
 .fullheight {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .halfheight {
@@ -82,10 +82,10 @@ header {
     height: 100vh;
     background-color: crimson;
     background-image: url("assets/img/tegan-mierle-fDostElVhN8-unsplash.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 
     display: flex;
     justify-content: center;
@@ -173,7 +173,7 @@ header {
 /* SHOP */
 
 .shop {
-    height: 100vh;
+    min-height: 100vh;
     
     display: flex;
     justify-content: center;
@@ -183,8 +183,10 @@ header {
 .shop--content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 75vh;
+    min-height: 75vh;
     gap: 2vw;
+    justify-content:center;
+    align-items:center;
 }
 
 .shop--products {
@@ -220,7 +222,7 @@ footer {
 }
 
 /* MOBILE - 600PX */
-/* Op schermen die 600px of kleiner zijn doe dit: */
+/* Op schermen die 768 of kleiner zijn doe dit: */
 
 @media screen and (max-width: 768px) {
     p {
@@ -251,7 +253,7 @@ footer {
         box-shadow: none;
     }
 
-    .verhaal--background {
+    .verhaal--backgroumin-nd {
         margin: 0 auto;
         margin-bottom: 5vh;
         grid-row-start: 1;
@@ -269,11 +271,16 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
-        height: 75vh;
-        gap: 2vw;
+        min-height: 75vh;
+        gap: 1vh;
+        margin-bottom: 5vh;
     }
-
+    
     /* Footer */
+    
+    .container--footer{
+        height:100vh;
+    }
 
     .d-flex{
         flex-direction: column;
