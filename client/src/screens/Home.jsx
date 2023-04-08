@@ -14,7 +14,7 @@ const Home = () => {
       <OnsVerhaal />
       <Project />
       <Steen />
-      <Acties />
+      <Blog />
       <Footer />
     </div>
   );

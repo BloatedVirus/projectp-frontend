@@ -1,6 +1,6 @@
 import React, { Component,useState, useEffect } from "react";
 
-const  Acties = () => {
+const  Blog = () => {
 
     const [data , setData] = useState();
     useEffect(() => {
@@ -34,4 +34,4 @@ const  Acties = () => {
     );
 }
 
-export default Acties;
+export default Blog;

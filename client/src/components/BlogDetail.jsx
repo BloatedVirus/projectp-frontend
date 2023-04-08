@@ -22,4 +22,6 @@ const BlogDetail = (props) => {
         <p>{}</p>
         </div>
     );
-    }
+}
+
+export default BlogDetail;
