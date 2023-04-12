@@ -130,6 +130,10 @@ header {
     color: white;
 }
 
+.steun--share .child{
+margin: 20px;
+}
+
 .container--steun {
     display: flex;
     justify-content: center;
