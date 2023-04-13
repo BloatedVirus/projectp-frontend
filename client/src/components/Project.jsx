@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { FacebookShareButton , TwitterShareButton, EmailShareButton, FacebookIcon,TwitterIcon,EmailIcon} from 'react-share';
+
 
 const Project = () => {
   return (
@@ -10,11 +12,11 @@ const Project = () => {
             <p>Deel dit project</p>
             
             <div class="steun--share">
-                <a href="https://twitter.com/share?url=https://projectp.chiropopov.be/&text=Steun de nieuwe lokalen van Chiro Popov" class="share-btn twitter">Twitter</a>
+                <TwitterShareButton url="https://twitter.com/share?url=https://projectp.chiropopov.be/&text=Steun de nieuwe lokalen van Chiro Popov" class="share-btn child"><TwitterIcon size={64} className="child"></TwitterIcon></TwitterShareButton>
                 
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://projectp.chiropopov.be/" class="share-btn facebook">Facebook</a>
+                <FacebookShareButton url="https://projectp.chiropopov.be/" class="share-btn child"><FacebookIcon size={64} className="child"></FacebookIcon></FacebookShareButton>
                 
-                <a href="mailto:?subject=Project P" class="share-btn email">Email</a>
+                <EmailShareButton href="mailto:?subject:Project P" class="share-btn child"><EmailIcon size={64} className="child"></EmailIcon></EmailShareButton>
             </div>
 
         </article>
