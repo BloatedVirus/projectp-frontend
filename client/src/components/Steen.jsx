@@ -5,7 +5,7 @@ const Stone = () => {
       <section id="shop" class="shop container fullheight">
       <div class="shop--content">
           <article>
-              <h2>Koop een steen!</h2>
+              <h2 className="font-weight-bold">Koop een steen!</h2>
               <h3>En steen zo onze Chiro</h3>
               <p>Zoals jullie wel weten zijn ze volop bezig met de bouw van onze prachtige, nieuwe lokalen.</p>
               <p>We hebben een “stenenactie” op poten gezet.</p>

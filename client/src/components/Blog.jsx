@@ -1,11 +1,12 @@
 import React, { Component,useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import cover  from "../assets/img/start-evenment.jpeg"
 
 const  Blog = () => {
 
     const [data , setData] = useState();
     useEffect(() => {
-      fetch("http://localhost:1337/api/blogs")
+      fetch("http://localhost:1337/api/blogs?populate=*")
         .then((res) => res.json())
         .then((data) => {
           setData(data);
@@ -13,18 +14,20 @@ const  Blog = () => {
     }, []);
     return (
       <div>
-        <section>
-          <h2>Ontdek onze acties!</h2>
-          <article>
-            {data?.data.map((blog) => (
+        <section className="fullheight container">
+          <h2 className="mb-2">Ontdek hier onze acties!</h2>
+          <h3 className="mb-5 light">Plus zo leer je ons ook een beetje kennen!</h3>
+          <article className="blogs">
+            {data?.data?.map((blog) => (
+              console.log(blog.attributes),
               
               <div key={blog.id}>
-                {console.log(blog)}
-            <div class="card">
+            <div class="card blog">
+              <img src={cover} class="card-img-top" alt="..."/>
+            <h5 class="card-title">{blog?.attributes?.title}</h5>
               <div class="card-body">
-                <h5 class="card-title">{blog.attributes.Title}</h5>
-                <p class="card-text">{blog.attributes.Description}</p>
-                <Link to={`blog/${blog.attributes.id}`}><a class="btn btn-primary">Bekijk blog</a></Link>
+                <p class="card-text semi-light">{blog?.attributes?.description}</p>
+                {/* <Link to={`blog/${blog?.attributes?.id}`}><a class="btn btn-primary">Lees meer</a></Link> */}
               </div>
             </div>
               </div>
