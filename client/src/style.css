@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+.font-weight-bold{
+    font-weight: 600 !important;
+}
+
 h1 {
     font-weight: bolder;
     color: white;
@@ -13,9 +17,9 @@ h1 {
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 3vw;
-    margin-bottom: 1.5vw;
+    font-weight: bold !important;
+    font-size: 3vw !important;
+    margin-bottom: 1.5vw !important;
     
 }
 
@@ -34,6 +38,37 @@ header h1{
 h3 {
     font-size: 2vw;
     margin-bottom: 1vw;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+}
+.blog{
+    width: 25em;
+    height: 30em;
+    box-shadow: 0vw 0vw 1rem black;
+    border-radius: 2vw !important;
+}
+.blog img{
+    border-radius: 2vw 2vw 0 0 !important;
+}
+.card-title{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 0.5vw;
+    color: crimson;
+}
+.card-text{
+    font-size: 1vw;
+    margin: 0.5vw;
+    color: black;
+}
+.btn-primary{
+    background-color : crimson !important;
+    color: white !important;
+    border: none !important;
+    width: 100%;
 }
 
 a {
@@ -59,6 +94,9 @@ p:last-child {
 .light {
     font-weight: 100;
 }
+.semi-light {
+    font-weight: 300;
+}
 
 .fullheight {
     min-height: 100vh;
@@ -70,22 +108,37 @@ p:last-child {
 
 /* NAV */
 
-nav {
-    background-color: black;
+.navbar-bg{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%) !important;
+  }
+
+.container-nav{
+    width: 60vw;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+nav{
     color: white;
     z-index: 99;
-    position: fixed;
+    position: fixed !important;
     width: 100vw;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
+.navbar-brand{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-right: 25vh !important;
 }
 
-.nav__item a {
-    padding: 2vw 0;
+.nav-item a {
+    padding: 1vw 0;
     display: block;
+}
+.nav-item{
+    margin-right: 2vw;
 }
 
 /* HEADER */
@@ -103,6 +156,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.big {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+    font-weight: 600;
 }
 
 /* ABOUT */
